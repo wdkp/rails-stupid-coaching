@@ -1,0 +1,12 @@
+<h1>Answers</h1>
+<p><%=@questions%></p>
+<p>You</p>
+<p><%= @answer %></p>
+<p>Coach</p>
+
+<ol>
+  <% @answers.each do |answer| %>
+    <li><%= answer.capitalize %></li>
+  <% end %>
+</ol>
+<%= link_to("Ask me anything", ask_path) %>
